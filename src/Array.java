@@ -4,9 +4,9 @@ public class Array {
 
     public static void main(String[] args) {
         String[] arrays  = {"привет", "ПОКА", "гипербола"};
-        String r = arrays[0].toUpperCase();
+        String r1 = arrays[0].toUpperCase();
         String b = arrays[1].toLowerCase();
-            System.out.println(r);
+            System.out.println(r1);
             System.out.println(b);
 
         for(int i=0 ; i<arrays.length; i++){ // перебор строк
