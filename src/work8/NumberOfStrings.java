@@ -23,8 +23,8 @@ public class NumberOfStrings {
 
     public static void main(String[] args) {
         Playable guitar = new Guitar();
-        guitar.play();
         Piano piano = new Piano();
+        guitar.play();
         piano.play();
     }
 }
