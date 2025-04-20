@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LesnyakAuto.iml" filepath="$PROJECT_DIR$/LesnyakAuto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/allure-selenide-demo.iml" filepath="$PROJECT_DIR$/allure-selenide-demo.iml" />
     </modules>
   </component>
 </project>
