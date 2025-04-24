@@ -59,6 +59,12 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj}</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
