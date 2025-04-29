@@ -1,4 +1,4 @@
-package Work13;
+package Work12;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -7,7 +7,6 @@ import lombok.Getter;
 
 import java.time.Duration;
 
-import static com.codeborne.selenide.Selectors.byId;
 import static com.codeborne.selenide.Selenide.$;
 
 public class Button {
