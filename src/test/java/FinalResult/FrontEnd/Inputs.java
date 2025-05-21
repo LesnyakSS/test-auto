@@ -23,6 +23,8 @@ public class Inputs {
 
     int waitSecond = 5;
 
+
+
     public Inputs(SelenideElement element, String description) {
         this.element = element;
         this.description = description;

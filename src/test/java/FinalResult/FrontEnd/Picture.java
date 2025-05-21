@@ -23,15 +23,6 @@ public class Picture {
         this.element = element;
         this.description = description;
     }
-//    @Step("Нажать на кнопку")
-//    public Picture clickFileButton() {
-//        element.scrollIntoView(true);
-//        element.shouldBe(Condition.exist, Duration.ofSeconds(waitSecond))
-//                .click();
-//        return this;
-//    }
-
-
     @Step("Загрузим файл")
     public Picture selectFile() {
         fileInput.uploadFromClasspath("toolsImage.jpg");

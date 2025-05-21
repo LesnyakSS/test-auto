@@ -20,7 +20,6 @@ public class Hobbies {
 
     String description;
     int waitSecond = 10;
-
     public Hobbies(SelenideElement element, String description) {
         this.element = element;
         this.description = description;

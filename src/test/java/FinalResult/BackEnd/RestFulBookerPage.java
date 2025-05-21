@@ -163,6 +163,7 @@ public class RestFulBookerPage {
                 BOOKING_ID,
                 response.statusCode()));
 
+
         response.then()
                 .log().all()
                 .statusCode(200)

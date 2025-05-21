@@ -17,6 +17,7 @@ public class Button {
         this.description=description;
     }
 
+
     @Step("Проверяем видимости кнопки")
     public Button visibilityButton() {
         element.scrollIntoView(true);

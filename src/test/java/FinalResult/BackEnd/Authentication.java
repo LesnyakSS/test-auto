@@ -25,7 +25,6 @@ public class Authentication {
                 .statusCode(200)
                 .extract()
                 .response();
-
         authToken = response.jsonPath().getString("token");
         return authToken;
 

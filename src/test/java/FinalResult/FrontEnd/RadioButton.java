@@ -20,7 +20,6 @@ public class RadioButton {
         this.description=description;
     }
 
-
     @Step("Проверить видимость  радио кнопки")
     public RadioButton checkRadioButtonVisibility() {
         element.scrollIntoView(true);
