@@ -19,14 +19,12 @@ public class RadioButton {
         this.element=element;
         this.description=description;
     }
-
     @Step("Проверить видимость  радио кнопки")
     public RadioButton checkRadioButtonVisibility() {
         element.scrollIntoView(true);
         element.shouldBe(Condition.visible,Duration.ofSeconds(waitSecond));
         return this;
     }
-
     @Step("Выбрать радио кнопку")
     public RadioButton selectRadioButton() {
         element.scrollIntoView(true);

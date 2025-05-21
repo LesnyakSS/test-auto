@@ -175,6 +175,7 @@ public class RestFulBookerPage {
                 .body("additionalneeds", equalTo("Breakfast"));
     }
 
+
     @Test
     @Description("Получить данные о бронировании, после обновление данных")
     public void getAfterUpdateBooking() {

@@ -46,6 +46,7 @@ public class Date {
                 .selectOption(month);
         return this;
     }
+
     @Step("Выбрать год")
     public void selectYear(String year) {
         yearDropdown.shouldBe(Condition.visible, Duration.ofSeconds(waitSecond))

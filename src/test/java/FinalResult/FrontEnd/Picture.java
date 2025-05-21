@@ -18,6 +18,7 @@ public class Picture {
     SelenideElement element;
     String description;
     int waitSecond = 5;
+
     public Picture(SelenideElement element, String description) {
         this.element = element;
         this.description = description;

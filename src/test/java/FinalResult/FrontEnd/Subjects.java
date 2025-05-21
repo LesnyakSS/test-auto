@@ -33,4 +33,5 @@ public class Subjects {
         subjectsMath.shouldBe(Condition.visible, Duration.ofSeconds(waitSecond)).click();
         return this;
     }
+
 }

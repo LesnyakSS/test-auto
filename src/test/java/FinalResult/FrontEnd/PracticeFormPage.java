@@ -119,6 +119,7 @@ public class PracticeFormPage {
             step("Нажмем на кнопку - Submit");
         elementButton.visibilityButton();
         elementButton.clickButton();
+
             step("Отображается Popup");
         Configuration.timeout = 1000;
         elementPopUp.verifyData(

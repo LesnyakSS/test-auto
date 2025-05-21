@@ -66,6 +66,7 @@ public class Inputs {
         return this;
     }
 
+
     @Step("Проверить красный крестик в поле ввода")
     public void testRedImageInField() {
         element.shouldBe(Condition.cssValue("background-image",
