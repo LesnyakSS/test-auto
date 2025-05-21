@@ -45,7 +45,6 @@ public class PopUp {
         return this;
     }
 
-
     private void checkField(String fieldName, String value) {
         try {
             if (value != null && !value.isEmpty()) {

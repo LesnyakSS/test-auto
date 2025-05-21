@@ -115,6 +115,7 @@ public class PracticeFormPage {
         elementState.selectState();
         elementCity.clickButtonCity();
         elementCity.selectCity();
+
             step("Нажмем на кнопку - Submit");
         elementButton.visibilityButton();
         elementButton.clickButton();

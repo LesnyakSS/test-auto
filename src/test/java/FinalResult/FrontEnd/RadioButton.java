@@ -27,7 +27,6 @@ public class RadioButton {
         return this;
     }
 
-
     @Step("Выбрать радио кнопку")
     public RadioButton selectRadioButton() {
         element.scrollIntoView(true);

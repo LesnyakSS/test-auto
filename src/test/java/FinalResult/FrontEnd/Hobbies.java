@@ -32,7 +32,6 @@ public class Hobbies {
         return this;
     }
 
-
     @Step("Проверить, что чекбокс выбран")
     public Hobbies checkIsSelected() {
         checkHobbies.shouldBe(Condition.selected);

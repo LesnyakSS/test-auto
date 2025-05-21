@@ -145,7 +145,6 @@ public class RestFulBookerPage {
 
 
     }
-
     @Test
     @Description("Получить данные о бронировании")
     public void getBooking() {
