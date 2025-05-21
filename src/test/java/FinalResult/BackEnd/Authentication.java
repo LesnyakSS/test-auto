@@ -12,7 +12,6 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class Authentication {
     private static String authToken;
-
     public static String getToken() {
         Response response = RestAssured
                 .given()
@@ -25,6 +24,7 @@ public class Authentication {
                 .statusCode(200)
                 .extract()
                 .response();
+
         authToken = response.jsonPath().getString("token");
         return authToken;
 

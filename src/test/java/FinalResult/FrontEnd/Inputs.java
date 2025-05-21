@@ -24,12 +24,10 @@ public class Inputs {
     int waitSecond = 5;
 
 
-
     public Inputs(SelenideElement element, String description) {
         this.element = element;
         this.description = description;
     }
-
     @Step("Проверяем видимости поле ввода")
     public Inputs visibilityInput() {
         element.scrollIntoView(true);
@@ -67,6 +65,7 @@ public class Inputs {
         Assert.assertEquals(expectedGreenColor, actualColor);
         return this;
     }
+
 
     @Step("Проверить красный крестик в поле ввода")
     public void testRedImageInField() {

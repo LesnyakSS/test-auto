@@ -34,5 +34,4 @@ public class Subjects {
         return this;
     }
 
-
 }

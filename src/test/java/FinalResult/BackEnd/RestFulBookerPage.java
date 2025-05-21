@@ -145,7 +145,6 @@ public class RestFulBookerPage {
 
 
     }
-
     @Test
     @Description("Получить данные о бронировании")
     public void getBooking() {
@@ -175,6 +174,7 @@ public class RestFulBookerPage {
                 .body("bookingdates.checkout", equalTo("2019-01-01"))
                 .body("additionalneeds", equalTo("Breakfast"));
     }
+
 
     @Test
     @Description("Получить данные о бронировании, после обновление данных")
