@@ -20,7 +20,6 @@ public class StateCity {
     private final SelenideElement cityMerrut = $(byId("react-select-4-option-2"));
 
 
-
     @Getter
     SelenideElement element;
     String description;
