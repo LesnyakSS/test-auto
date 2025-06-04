@@ -11,38 +11,35 @@ import java.time.Duration;
 public class RadioButton {
     @Getter
     SelenideElement element;
-    String expectedRedColor = "rgb(220, 53, 69)";
-    String expectedGreenColor = "rgb(40, 167, 69)";
     String description;
-    int waitSecond = 5;
+    int waitSecond = 15;
     public RadioButton(SelenideElement element, String description) {
         this.element=element;
         this.description=description;
     }
-    @Step("Проверить видимость  радио кнопки")
+
     public RadioButton checkRadioButtonVisibility() {
-        element.scrollIntoView(true);
         element.shouldBe(Condition.visible,Duration.ofSeconds(waitSecond));
         return this;
     }
-    @Step("Выбрать радио кнопку")
+
     public RadioButton selectRadioButton() {
         element.scrollIntoView(true);
         element.shouldBe(Condition.exist, Duration.ofSeconds(waitSecond))
                 .click();
         return this;
     }
-    @Step("Проверка валидации поле Gender")
-    public RadioButton checkRedColor() {
-        element.shouldBe(Condition.cssValue("border-color", "rgb(220, 53, 69)"), Duration.ofSeconds(waitSecond));
-        String actualColor = element.getCssValue("border-color");
+    public RadioButton checkRedColor(String cssProperty,String expectedRedColor) {
+        element.shouldBe(Condition.cssValue(cssProperty, expectedRedColor), Duration.ofSeconds(waitSecond));
+        String actualColor = element.getCssValue(cssProperty);
         Assert.assertEquals(expectedRedColor, actualColor);
         return this;
     }
-    @Step("Проверка валидации поле Даты рождения")
-    public RadioButton checkGreenColor() {
-        element.shouldBe(Condition.cssValue("border-color", "rgb(40, 167, 69)"), Duration.ofSeconds(waitSecond));
-        String actualColor = element.getCssValue("border-color");
+
+
+    public RadioButton checkGreenColor(String cssProperty,String expectedGreenColor) {
+        element.shouldBe(Condition.cssValue(cssProperty, expectedGreenColor), Duration.ofSeconds(waitSecond));
+        String actualColor = element.getCssValue(cssProperty);
         Assert.assertEquals(expectedGreenColor, actualColor);
         return this;
     }
