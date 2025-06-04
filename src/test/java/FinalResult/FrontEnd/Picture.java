@@ -12,20 +12,18 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class Picture {
-    protected final SelenideElement fileInput = $x("//input[@id='uploadPicture']");
 
     @Getter
     SelenideElement element;
     String description;
-    int waitSecond = 5;
 
     public Picture(SelenideElement element, String description) {
         this.element = element;
         this.description = description;
     }
-    @Step("Загрузим файл")
-    public Picture selectFile() {
-        fileInput.uploadFromClasspath("toolsImage.jpg");
+
+    public Picture selectFile(SelenideElement fileInput, String textFile) {
+        fileInput.uploadFromClasspath(textFile);
         return this;
 
     }
